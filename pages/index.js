@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import InputForm from "../components/InputForm";
-import ShortBorder from "../public/images/border-accessory.png";
+import ShortBorder from "/public/images/border-accessory.png";
 
 export default function Home() {
 	return (
