@@ -9,24 +9,11 @@ import CreditCard from "../public/icons/credit-card-fill.png";
 import DropDown from "../public/icons/drop-down.png";
 import { SideLinks } from "../data/SideLinks";
 
-const SideNav = ({ setUserRequest }) => {
+const SideNav = () => {
 	// Logic
 	const [dropMenu, setDropMenu] = useState(false);
 	const handleDrop = () => {
 		setDropMenu(!dropMenu);
-	};
-	const showMain = (item) => {
-		if (item.title || item.links === "Bills") {
-			setUserRequest({
-				bills: true,
-				request: false,
-			});
-		} else if (item.title || item.links === "View Report") {
-			setUserRequest({
-				bills: false,
-				request: true,
-			});
-		}
 	};
 
 	return (
@@ -64,7 +51,7 @@ const SideNav = ({ setUserRequest }) => {
 											? "bg-deep-blue p-2 mr-6 rounded-[50%] flex transition-all"
 											: "flex mr-6 p-2 transition-all"
 									}>
-									<Image src={item.icon} height={17} width={17} />
+									<Image src={item.icon} height={17} width={17} alt={item.title} />
 								</span>
 								<div className='w-[60%]'>
 									<p

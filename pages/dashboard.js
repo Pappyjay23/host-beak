@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import DropDown from "../public/icons/dropdown-icon.png";
@@ -7,12 +7,6 @@ import SideNav from "../components/SideNav";
 import Bill from "../components/Bill";
 
 const dashboard = () => {
-	// Logic
-	const [userRequest, setUserRequest] = useState({
-		bills: true,
-		request: false,
-	  });
-	const {bills, request} = userRequest
 	return (
 		<div>
 			<Head>
@@ -25,7 +19,7 @@ const dashboard = () => {
 			</Head>
 			<section className="overflow-x-hidden">
 				<div className='bg-dash-bg h-screen w-full relative'>
-					<SideNav setUserRequest={setUserRequest} />
+					<SideNav />
 					<nav className='flex py-4 px-8 w-full relative'>
 						<div className='flex items-center justify-end w-full'>
 							<div className='px-[.9rem] py-[.5rem] border border-light-grey rounded-[50%] mr-2 cursor-pointer'>

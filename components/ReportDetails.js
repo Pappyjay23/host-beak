@@ -21,7 +21,7 @@ const ReportDetails = () => {
 								View
 							</button>
 							<div className='ml-4'>
-								<Image src={Message} height={15} width={15} />
+								<Image src={Message} height={15} width={15} alt={data.title} />
 							</div>
 						</div>
 					</div>

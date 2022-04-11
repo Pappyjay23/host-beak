@@ -51,7 +51,7 @@ const BillingDetails = ({price, handlePrice}) => {
 						className='border rounded-sm w-full px-2 py-1 outline-none'
 					/>
 					<div className='ml-2'>
-						<Image src={Edit} height={20} width={20} />
+						<Image src={Edit} height={20} width={20} alt='edit' />
 					</div>
 				</div>
 				<div className='flex items-center'>
@@ -62,7 +62,7 @@ const BillingDetails = ({price, handlePrice}) => {
 							: parseFloat(0).toFixed(2)}
 					</span>
 					<div className='ml-2'>
-						<Image src={Delete} height={15} width={15} />
+						<Image src={Delete} height={15} width={15} alt='delete' />
 					</div>
 				</div>
 			</div>
