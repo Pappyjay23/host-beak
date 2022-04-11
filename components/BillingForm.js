@@ -58,7 +58,7 @@ const BillingForm = () => {
 								<input
 									type='date'
 									id='d-date'
-									placeholder='2021-03-25'
+									value='2021-03-25'
 									className='border w-[40%] px-2 py-1 outline-none'
 								/>
 							</div>
