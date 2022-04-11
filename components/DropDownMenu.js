@@ -1,9 +1,9 @@
 import React from "react";
 import Link from 'next/link'
 
-const DropDownMenu = ({index, item}) => {
+const DropDownMenu = ({index}) => {
 	return (
-		<div key={index}>
+		<div>
 			<Link href={item.link}>
 				<a>
 					<button className='text-left text-xs text-light-grey hover:text-deep-blue focus:text-deep-blue '>

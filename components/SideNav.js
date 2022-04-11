@@ -27,7 +27,7 @@ const SideNav = () => {
 			<div className='px-1 '>
 				<div className='flex flex-col mb-2'>
 					{SideLinks.map((item, index) => {
-						return <SideItems item={item} index={index} />;
+						return <SideItems item={item} key={index} />;
 					})}
 				</div>
 				<Link href='/'>

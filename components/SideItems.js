@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import SideLink from "./SideLink";
 import DropDownMenu from "./DropDownMenu";
 
-const SideItems = ({item, index}) => {
+const SideItems = ({item}) => {
 	const [dropMenu, setDropMenu] = useState(false);
 	const handleDrop = () => {
 		setDropMenu(!dropMenu);
 	};
 	return (
-		<div className='w-full' key={index}>
+		<div className='w-full'>
 			<SideLink
 				item={item}
 				index={index}
@@ -19,7 +19,7 @@ const SideItems = ({item, index}) => {
 				{item.drop &&
 					dropMenu &&
 					item.links?.map((item, index) => (
-						<DropDownMenu item={item} index={index} />
+						<DropDownMenu item={item} key={index} />
 					))}
 			</div>
 		</div>
