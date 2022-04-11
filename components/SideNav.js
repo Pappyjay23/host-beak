@@ -34,7 +34,7 @@ const SideNav = () => {
 			<div className='px-1 '>
 				<div className='flex flex-col mb-2'>
 					{SideLinks.map((item, index) => (
-						<div className='w-full'>
+						<div className='w-full' key={index}>
 							<button
 								onClick={item.drop && item.links ? handleDrop : null}
 								href={item.link}
