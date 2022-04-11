@@ -14,23 +14,24 @@ export const SideLinks = [
     {
         icon: Shuttle,
         title: 'Welcome',
-        link: '/'
+        link: ''
     },
     {
         icon: Multi,
         title: 'Dashboard',
-        link: '/'
+        link: '/dashboard'
     },
     {
         icon: Wallet,
         title: 'Sales',
         drop: true,
-        link: '/'
+        link: ''
     },
     {
         icon: Cart,
         title: 'Purchases',
         drop: true,
+        link: '',
         links:[
             {
                 name:"Bills",
@@ -50,29 +51,30 @@ export const SideLinks = [
         icon: Cell,
         title: 'Accounting',
         drop: true,
-        link: '/'
+        link: ''
     },
     {
         icon: Bank,
         title: 'Banking',
         drop: true,
-        link: '/'
+        link: ''
     },
     {
         icon: Invoice,
         title: 'Payroll',
         drop: true,
-        link: '/'
+        link: ''
     },
     {
         icon: Reports,
         title: 'Reports',
-        link: '/'
+        link: ''
     },
     {
         icon: Users,
         title: 'Analytics',
         drop: true,
+        link: '',
         links:[
             {
                 name:"View Report",
@@ -80,37 +82,37 @@ export const SideLinks = [
             },
             {
                 name: 'To-Do',
-                link: '/'
+                link: ''
             },
             {
                 name: 'Upload Docs',
-                link: '/'
+                link: ''
             },
             {
                 name: 'Chat',
-                link: '/'
+                link: ''
             },
             {
                 name: 'Schedule',
-                link: '/'
+                link: ''
             },
             {
                 name: 'Message Board',
-                link: '/'
+                link: ''
             },
             {
                 name: 'Make Payments',
-                link: '/'
+                link: ''
             },
             {
                 name: 'Billing',
-                link: '/'
+                link: ''
             },
         ]
     },
     {
         icon: Settings,
         title: 'Settings',
-        link: '/'
+        link: ''
     },
 ]
