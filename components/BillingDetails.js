@@ -31,7 +31,7 @@ const BillingDetails = ({price, handlePrice}) => {
 					<input
 						type='number'
 						id='qty'
-						value='1'
+						placeholder="1"
 						className='border rounded-sm w-full px-2 py-1 outline-none'
 					/>
 				</div>
@@ -46,7 +46,7 @@ const BillingDetails = ({price, handlePrice}) => {
 				</div>
 				<div className='flex items-center'>
 					<input
-						type='number'
+						type='text'
 						id='tax'
 						className='border rounded-sm w-full px-2 py-1 outline-none'
 					/>
