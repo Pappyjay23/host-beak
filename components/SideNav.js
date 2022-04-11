@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/images/host-beak-logo.png";
 import ToRight from "../public/icons/to-right-icon.png";
 import Logout from "../public/icons/logout.png";
 import CreditCard from "../public/icons/credit-card-fill.png";
-import { SideLinks } from "../data/SideLinks";
-import DropDownMenu from "./DropDownMenu";
-import SideLink from "./SideLink";
+import SideLinksContainer from "./SideLinksContainer";
 
 const SideNav = () => {
 	return (
@@ -27,30 +25,7 @@ const SideNav = () => {
 			</Link>
 			<div className='px-1 '>
 				<div className='flex flex-col mb-2'>
-					{SideLinks.map((item, index) => {
-						const [dropMenu, setDropMenu] = useState(false);
-						const handleDrop = () => {
-							setDropMenu(!dropMenu);
-						};
-
-						return (
-							<div className='w-full' key={index}>
-								<SideLink
-									item={item}
-									index={index}
-									dropMenu={dropMenu}
-									handleDrop={handleDrop}
-								/>
-								<div className='mb-2 flex flex-col items-center'>
-									{item.drop &&
-										dropMenu &&
-										item.links?.map((item, index) => (
-											<DropDownMenu item={item} index={index} />
-										))}
-								</div>
-							</div>
-						);
-					})}
+					<SideLinksContainer />
 				</div>
 				<Link href='/'>
 					<a>
