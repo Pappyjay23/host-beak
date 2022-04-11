@@ -25,7 +25,8 @@ export const SideLinks = [
         icon: Wallet,
         title: 'Sales',
         drop: true,
-        link: ''
+        link: '',
+        links: []
     },
     {
         icon: Cart,
@@ -51,19 +52,22 @@ export const SideLinks = [
         icon: Cell,
         title: 'Accounting',
         drop: true,
-        link: ''
+        link: '',
+        links: []
     },
     {
         icon: Bank,
         title: 'Banking',
         drop: true,
-        link: ''
+        link: '',
+        links: []
     },
     {
         icon: Invoice,
         title: 'Payroll',
         drop: true,
-        link: ''
+        link: '',
+        links: []
     },
     {
         icon: Reports,
