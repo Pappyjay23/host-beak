@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(//db.onlinewebfonts.com/c/6228016f2b172c06410f3a2356d33f6c?family=Roobert-Regular);
+@layer base {
+    html {
+      font-family: 'Roobert-Regular', 'Montserrat', 'sans-serif';
+      background-color: #F9F9F9;
+    }
+    .reports::-webkit-scrollbar {
+      display: none;
+  }
+  }
