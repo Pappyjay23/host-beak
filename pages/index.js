@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import InputForm from "../components/InputForm";
-import ShortBorder from "/public/images/border-accessory.png";
 
 export default function Home() {
 	return (
@@ -50,7 +49,7 @@ export default function Home() {
 						<div className='mb-6'>
 							<InputForm
 								title='Phone Number'
-								type='number'
+								type='text'
 								id='phone-no'
 								placeholder='Enter your phone number'
 							/>
@@ -94,7 +93,7 @@ export default function Home() {
 						</Link>
 						<div className='flex justify-between'>
 							<Image
-								src={ShortBorder}
+								src='/images/border-accessory.png'
 								alt='Short Border'
 								width={150}
 								height={2}
@@ -107,7 +106,7 @@ export default function Home() {
 								</Link>
 							</p>
 							<Image
-								src={ShortBorder}
+								src='/images/border-accessory.png'
 								alt='Short Border'
 								width={150}
 								height={2}
