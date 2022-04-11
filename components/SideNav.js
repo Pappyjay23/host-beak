@@ -5,7 +5,8 @@ import Logo from "../public/images/host-beak-logo.png";
 import ToRight from "../public/icons/to-right-icon.png";
 import Logout from "../public/icons/logout.png";
 import CreditCard from "../public/icons/credit-card-fill.png";
-import SideLinksContainer from "./SideLinksContainer";
+import { SideLinks } from "../data/SideLinks";
+import SideItems from "./SideItems";
 
 const SideNav = () => {
 	return (
@@ -25,7 +26,9 @@ const SideNav = () => {
 			</Link>
 			<div className='px-1 '>
 				<div className='flex flex-col mb-2'>
-					<SideLinksContainer />
+					{SideLinks.map((item, index) => {
+						return <SideItems item={item} index={index} />;
+					})}
 				</div>
 				<Link href='/'>
 					<a>
