@@ -10,7 +10,7 @@ const Bill = () => {
 	};
 
 	return (
-		<div className='relative w-[1100px] top-0 left-[250px] h-screen bg-white px-6 py-8 rounded-xl'>
+		<div className='relative w-[90%] top-0 left-[250px] h-screen bg-white px-6 py-8 rounded-xl'>
 			<h2 className='text-sm font-bold mb-4 text-deep-blue'>Add Bill</h2>
 			<BillingForm />
 			<div className='border rounded-sm w-[80%] py-4 px-4'>

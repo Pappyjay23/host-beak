@@ -23,6 +23,8 @@ module.exports = {
 				"border-grey": "#D8D8D8",
 				"box-grey": "#EBEBEB;",
 				"dash-bg": "#F9F9F9;",
+				"green": "#39DA8A;",
+				"light-green": "#D9FCEA;"
 			},
 		},
 	},
