@@ -11,7 +11,6 @@ const SideItems = ({item}) => {
 		<div className='w-full'>
 			<SideLink
 				item={item}
-				index={index}
 				dropMenu={dropMenu}
 				handleDrop={handleDrop}
 			/>

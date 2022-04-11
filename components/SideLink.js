@@ -4,7 +4,7 @@ import Image from "next/image"
 import ToRightSm from "../public/icons/to-right-sm.png";
 import DropDown from "../public/icons/drop-down.png";
 
-const SideLink = ({ item, index, dropMenu, handleDrop}) => {
+const SideLink = ({ item, dropMenu, handleDrop}) => {
 	return (
 		<Link href={item.link} passHref>
 			<a>
@@ -14,8 +14,7 @@ const SideLink = ({ item, index, dropMenu, handleDrop}) => {
 						dropMenu
 							? " w-full flex items-center mb-4 justify-between text-left"
 							: " w-full flex items-center justify-between mb-4 text-left"
-					}
-					key={index}>
+					}>
 					<span
 						className={
 							dropMenu
