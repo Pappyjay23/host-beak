@@ -2,7 +2,6 @@ import Shuttle from '../public/icons/shuttle.png'
 import Multi from '../public/icons/multi.png'
 import Wallet from '../public/icons/ic_wallet.png'
 import Cart from '../public/icons/purchase.png'
-import CartWhite from '../public/icons/purchase-white.png'
 import Cell from '../public/icons/cell.png'
 import Bank from '../public/icons/bank.png'
 import Invoice from '../public/icons/ic_invoices.png'
@@ -14,19 +13,22 @@ export const SideLinks = [
     {
         icon: Shuttle,
         title: 'Welcome',
-        link: ''
+        link: '/dashboard/welcome'
     },
     {
         icon: Multi,
         title: 'Dashboard',
-        link: '/dashboard'
+        link: '/dashboard/dashboard'
     },
     {
         icon: Wallet,
         title: 'Sales',
         drop: true,
         link: '',
-        links: []
+        links: [
+            {name: "Sales",
+        link:"/dashboard/sales"}
+        ]
     },
     {
         icon: Cart,
@@ -36,7 +38,7 @@ export const SideLinks = [
         links:[
             {
                 name:"Bills",
-                link: '/dashboard'
+                link: '/dashboard/bills'
             },
             {
                 name: 'Vendors',
@@ -82,7 +84,7 @@ export const SideLinks = [
         links:[
             {
                 name:"View Report",
-                link: '/request'
+                link: '/dashboard/reports'
             },
             {
                 name: 'To-Do',

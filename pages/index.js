@@ -82,7 +82,7 @@ export default function Home() {
 								<a className='text-xs text-light-blue'>Forgot Password?</a>
 							</Link>
 						</div>
-						<Link href='/dashboard'>
+						<Link href='/dashboard/welcome'>
 							<a>
 								<button
 									type='submit'

@@ -1,6 +1,6 @@
 import React from "react";
-import Edit from '../public/icons/edit.png'
-import Delete from '../public/icons/delete.png'
+import Edit from '../../public/icons/edit.png'
+import Delete from '../../public/icons/delete.png'
 import Image from "next/image";
 
 const BillingDetails = ({price, handlePrice}) => {

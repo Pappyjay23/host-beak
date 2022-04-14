@@ -4,18 +4,17 @@ import Image from "next/image";
 import DropDown from "../public/icons/dropdown-icon.png";
 import Notification from "../public/icons/notification.png";
 import SideNav from "../components/SideNav";
-import Reports from "../components/Reports";
 
-const dashboard = () => {
+const DashboardTemplate = ({main, title}) => {
 	return (
 		<div>
 			<Head>
-				<title>Dashboard</title>
+				<title>{title}</title>
 				<meta
 					name='description'
 					content='HostBeak is a web store for building an exceptional business'
 				/>
-				<link rel='icon' href='images/host-beak-logo.png' />
+				<link rel='icon' href='/images/host-beak-logo.png' />
 			</Head>
 			<section className="overflow-x-hidden">
 				<div className='bg-dash-bg h-screen w-full relative'>
@@ -39,11 +38,11 @@ const dashboard = () => {
 							</div>
 						</div>
 					</nav>
-					<Reports />
+					{main}
 				</div>
 			</section>
 		</div>
 	);
 };
 
-export default dashboard;
+export default DashboardTemplate;
