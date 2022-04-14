@@ -5,7 +5,7 @@ import MainTemplate from '../../components/mainTemplate'
 const message = () => {
   return (
     <div>
-        <DashBoardTemplate main={<MainTemplate title="Message" children={null} />} title='Message' />
+        <DashBoardTemplate main={<MainTemplate title="Message Board" children={null} />} title='Message Board' />
     </div>
   )
 }

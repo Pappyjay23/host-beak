@@ -5,7 +5,7 @@ import MainTemplate from '../../components/mainTemplate'
 const payments = () => {
   return (
     <div>
-        <DashBoardTemplate main={<MainTemplate title="Make Payments" children={null} />} title='Make Payments' />
+        <DashBoardTemplate main={<MainTemplate title="Make Payments" children={null} />} title='Payments' />
     </div>
   )
 }
