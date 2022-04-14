@@ -6,7 +6,14 @@ import MainTemplate from "../../components/mainTemplate";
 const bills = () => {
 	return (
 		<div>
-			<DashboardTemplate main={<MainTemplate title="Bills" children={<Bill />} />} title='Bills' />
+			<DashboardTemplate
+				main={
+					<MainTemplate title='Bills'>
+						<Bill />
+					</MainTemplate>
+				}
+				title='Bills'
+			/>
 		</div>
 	);
 };

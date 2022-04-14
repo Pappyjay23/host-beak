@@ -1,13 +1,16 @@
-import React from 'react'
-import DashBoardTemplate from '../../components/DashboardTemplate'
-import MainTemplate from '../../components/mainTemplate'
+import React from "react";
+import DashBoardTemplate from "../../components/DashboardTemplate";
+import MainTemplate from "../../components/mainTemplate";
 
 const message = () => {
-  return (
-    <div>
-        <DashBoardTemplate main={<MainTemplate title="Message Board" children={null} />} title='Message Board' />
-    </div>
-  )
-}
+	return (
+		<div>
+			<DashBoardTemplate
+				main={<MainTemplate title='Message Board'>{null}</MainTemplate>}
+				title='Message Board'
+			/>
+		</div>
+	);
+};
 
-export default message
+export default message;
