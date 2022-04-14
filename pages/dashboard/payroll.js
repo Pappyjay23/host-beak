@@ -1,6 +1,6 @@
 import React from "react";
 import DashBoardTemplate from "../../components/DashboardTemplate";
-import MainTemplate from "../../components/mainTemplate";
+import MainTemplate from "../../components/MainTemplate";
 
 const payroll = () => {
 	return (

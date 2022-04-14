@@ -1,7 +1,7 @@
 import React from "react";
 import Bill from "../../components/bill/Bill";
 import DashboardTemplate from "../../components/DashboardTemplate";
-import MainTemplate from "../../components/mainTemplate";
+import MainTemplate from "../../components/MainTemplate";
 
 const bills = () => {
 	return (

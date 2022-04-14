@@ -1,6 +1,6 @@
 import React from "react";
 import DashboardTemplate from "../../components/DashboardTemplate";
-import MainTemplate from "../../components/mainTemplate";
+import MainTemplate from "../../components/MainTemplate";
 import ReportDetails from "../../components/ReportDetails";
 
 const reports = () => {
