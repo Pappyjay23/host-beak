@@ -6,6 +6,7 @@
     html {
       font-family: 'Roobert-Regular', 'Montserrat', 'sans-serif';
       background-color: #F9F9F9;
+      height: 100vh;
     }
     .reports::-webkit-scrollbar {
       display: none;

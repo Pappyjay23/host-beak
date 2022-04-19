@@ -5,7 +5,7 @@ import InputForm from "../components/InputForm";
 
 const FormContainer = () => {
 	return (
-		<form className='backdrop-blur-sm py-10 px-6 md:p-12 h-full'>
+		<form className='backdrop-blur-sm py-6 sm:py-10 px-6 md:p-12 h-full'>
 			<h3 className='font-bold text-xl text-deep-blue mb-1'>Create Account</h3>
 			<p className='text-black lg:text-grey mb-8'>
 				Build an exceptional business
