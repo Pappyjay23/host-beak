@@ -13,14 +13,14 @@ export default function Home() {
 				<link rel='icon' href='images/host-beak-logo.png' />
 			</Head>
 
-			<main className='flex w-full relative'>
-				<div className='bg-heroImg bg-cover bg-center bg-no-repeat h-screen w-full relative'>
+			<main className='flex w-full h-full relative'>
+				<div className='hidden lg:flex md:bg-heroImg bg-cover bg-center bg-no-repeat h-screen w-full relative'>
 					<p className='w-[50%] text-2xl absolute bottom-28 left-[30%] text-white'>
 						Building exceptional services with Back Office Support and Business
 						Perfomance
 					</p>
 				</div>
-				<div className='w-full p-12'>
+				<div className='w-full bg-heroImg bg-cover bg-center bg-no-repeat lg:bg-none'>
 					<FormContainer />
 				</div>
 			</main>

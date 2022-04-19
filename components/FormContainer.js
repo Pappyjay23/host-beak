@@ -1,15 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import InputForm from '../components/InputForm'
+import InputForm from "../components/InputForm";
 
 const FormContainer = () => {
 	return (
-		<form>
+		<form className='backdrop-blur-sm py-10 px-6 md:p-12 h-full'>
 			<h3 className='font-bold text-xl text-deep-blue mb-1'>Create Account</h3>
-			<p className='text-grey mb-8'>Build an exceptional business</p>
-			<div className='flex w-full justify-between mb-6'>
-				<div className='w-[48%] flex flex-col'>
+			<p className='text-black lg:text-grey mb-8'>
+				Build an exceptional business
+			</p>
+			<div className='flex flex-col md:flex-row w-full justify-between mb-0 md:mb-6'>
+				<div className='md:w-[48%] flex flex-col mb-6'>
 					<InputForm
 						title='First Name'
 						type='text'
@@ -17,7 +19,7 @@ const FormContainer = () => {
 						placeholder='Enter your first name'
 					/>
 				</div>
-				<div className='w-[48%] flex flex-col'>
+				<div className='md:w-[48%] flex flex-col mb-6 md:mb-0'>
 					<InputForm
 						title='Last Name'
 						type='text'
@@ -71,27 +73,31 @@ const FormContainer = () => {
 					</button>
 				</a>
 			</Link>
-			<div className='flex justify-between'>
-				<Image
-					src='/images/border-accessory.png'
-					alt='Short Border'
-					width={150}
-					height={2}
-					objectFit='contain'
-				/>
+			<div className='flex justify-center lg:justify-between items-center'>
+				<div className="hidden lg:flex">
+					<Image
+						src='/images/border-accessory.png'
+						alt='Short Border'
+						width={70}
+						height={2}
+						objectFit='contain'
+					/>
+				</div>
 				<p className='text-xs'>
 					Got an account?{" "}
 					<Link href='/'>
 						<a className='ml-2 text-light-blue'>Sign in</a>
 					</Link>
 				</p>
-				<Image
-					src='/images/border-accessory.png'
-					alt='Short Border'
-					width={150}
-					height={2}
-					objectFit='contain'
-				/>
+				<div className="hidden lg:flex">
+					<Image
+						src='/images/border-accessory.png'
+						alt='Short Border'
+						width={70}
+						height={2}
+						objectFit='contain'
+					/>
+				</div>
 			</div>
 		</form>
 	);
